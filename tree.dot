@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="Reco_Policy_Cat <= -1.665\ngini = 0.365\nsamples = 35617\nvalue = [27068, 8549]", fillcolor="#eda978"] ;
+1 [label="Reco_Policy_Cat <= -2.137\ngini = 0.17\nsamples = 4212\nvalue = [3818, 394]", fillcolor="#e88e4d"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Upper_Age <= 1.708\ngini = 0.009\nsamples = 1393\nvalue = [1387, 6]", fillcolor="#e5823a"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+34 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 34 ;
+45 [label="Reco_Policy_Cat <= -1.822\ngini = 0.237\nsamples = 2819\nvalue = [2431, 388]", fillcolor="#e99559"] ;
+1 -> 45 ;
+46 [label="(...)", fillcolor="#C0C0C0"] ;
+45 -> 46 ;
+895 [label="(...)", fillcolor="#C0C0C0"] ;
+45 -> 895 ;
+1050 [label="Reco_Policy_Cat <= 1.009\ngini = 0.384\nsamples = 31405\nvalue = [23250, 8155]", fillcolor="#eead7e"] ;
+0 -> 1050 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+1051 [label="Reco_Policy_Cat <= 0.852\ngini = 0.373\nsamples = 26820\nvalue = [20158, 6662]", fillcolor="#eeab7a"] ;
+1050 -> 1051 ;
+1052 [label="(...)", fillcolor="#C0C0C0"] ;
+1051 -> 1052 ;
+13009 [label="(...)", fillcolor="#C0C0C0"] ;
+1051 -> 13009 ;
+14606 [label="City_Code_Encoded <= 3.038\ngini = 0.439\nsamples = 4585\nvalue = [3092, 1493]", fillcolor="#f2be99"] ;
+1050 -> 14606 ;
+14607 [label="(...)", fillcolor="#C0C0C0"] ;
+14606 -> 14607 ;
+17326 [label="(...)", fillcolor="#C0C0C0"] ;
+14606 -> 17326 ;
+}
